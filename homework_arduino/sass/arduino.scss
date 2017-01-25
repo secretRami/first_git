@@ -1,0 +1,221 @@
+
+/*상단부 css*/
+.sitemenu{
+  background-color: #fff;
+  width: auto;
+  height: 58px;
+  position: relative;
+
+  > .sitemenu_left{
+    float: left;
+    width: 260px;
+    height: 30px;
+
+
+    > img{
+      width: 100%;
+      padding: 14px 15px;
+      border-right: 1px solid #eee;
+    }
+  }
+
+  > .sitemenu_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    width: 225px;
+    height: 58px;
+    font-weight: bold;
+
+    > .sitemenu_right_sign_up{
+      float: right;
+      padding: 20px 22px;
+      background-color: #0696d7;
+      color: #fff;
+    }
+    > .sitemenu_right_sign_in{
+      float: right;
+      padding-right: 20px;
+      line-height: 58px;
+      color: #8d9eb0;
+
+    }
+  }
+}
+
+
+
+/*중간 container css*/
+.container-site_inner{
+  width: auto;
+
+  > .container-site_inner_banner{
+    background-color: #34495e;
+    background-image: url(../img/Home-Header-Bg.png);
+    background-size: auto 260px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+    text-align: center;
+
+    > h2{
+      padding-top: 2em;
+      color: #fff;
+      font-size: 48px; font-weight: 300;
+      line-height: 52px;
+    }// h1
+  }//.container-site_inner_banner
+  > .container-site_inner_nav{
+    background-color: #f4f5f6;
+    width: auto;
+    height: 49px;
+    border-bottom: 1px solid #dfe3e8;
+    position: relative;
+
+    > ul {
+      width: 400px;
+      position: absolute;
+      left: 50%;
+      margin-left: -200px;
+
+      >li{
+        float: left;
+        font-size: 22px;
+        color: #8d9eb0;
+        margin-top: 10px;
+        padding: 0 14px;
+        text-align: center;
+
+      }//li
+    }//ul
+  }//.container-site_inner_nav
+
+  > .container-site_inner_section1{
+    background-color: #f4f5f6;
+    width: auto;
+    height: 536px;
+    padding: 70px 0;
+    border-bottom: 1px solid #dfe3e8;
+
+
+    > div{
+      float: left;
+      width: 420px;
+      margin-top: 12px;
+      padding-left: 20px;
+
+      > h2{
+        color: #34495e;
+        font-size: 45px; font-weight: 300;
+      }//h1
+      >p{
+        color: #8d9eb0;
+        line-height: 25px;
+        padding-top: 5px;
+      }//p
+    }//div
+
+    > img{
+      float: right;
+      max-width: 800px;
+      max-height: 538px;
+      padding-right: 20px;
+
+    }//img
+
+
+  }//.container-site_inner_section1
+
+  > .container-site_inner_section2{
+    background-color: #fff;
+    width: auto;
+    height: 677px;
+    padding: 70px 0;
+    border-bottom: 1px solid #dfe3e8;
+
+    >div{
+      float: left;
+      width: 420px;
+      margin-top: 12px;
+      padding-left: 20px;
+
+      > h2{
+        color: #344952;
+        font-size: 45px; font-weight: 300;
+      }//h1
+      > p{
+        color: #8d9eb0;
+        line-height: 25px;
+        padding-top: 5px;
+      }
+    }
+    >img{
+      float: right;
+      max-width: 800px;
+      max-height: 538px;
+      padding-right: 20px;
+    }//img
+  }//.container-site_inner_section2
+
+  > .container-site_inner_cta{
+    background-color: #fff;
+    width: auto;
+    height: 121px;
+    text-align: center;
+    padding: 50px 0;
+
+    >h2{
+      font-size: 36px; font-weight: 300;
+      padding: 0 30px;
+      color: #8d9eb0;
+    }
+
+  }//.container-site_inner_cta
+}//.container-site_inner
+
+
+
+
+
+
+/*하단부 css*/
+footer{
+  //position: relative;
+  background-color: #fff;
+  width: auto;
+  height: 62px;
+  border-top: 1px solid #dfe3e8;
+  padding: 30px 20px;
+
+  /* 오토데스크 이미지 div */
+  > .footer_logo {
+    //position: absolute;
+    //left: 30px;
+    //bottom: 16px;
+    float: left;
+    background-color: #fff;
+    width: 120px;
+    height: 24px;
+
+    > img{
+      max-width: 100%;
+    }//img
+  }//.footer_logo
+  div{
+    float: right;
+
+    > ul {
+      >li{
+        float: left;
+        font-size: 14px; font-weight: 500;
+        color: #c5cfd9;
+        margin-top: 10px;
+        padding: 0 14px;
+        text-align: center;
+
+      }//li
+    }//ul
+  }//div
+}//footer

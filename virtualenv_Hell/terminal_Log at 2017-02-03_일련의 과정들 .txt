@@ -1,0 +1,792 @@
+
+  832  python --version
+
+  833  pyenv install -l
+
+  834  pyenv versions
+
+
+—————————————————
+
+  836  brew install pyenv             //-    pyenv설치과정
+
+  838  brew install pyenv-virtualenv
+—————————————————
+
+
+  839  brew search pyenv 
+
+
+——————————————
+  841  vi ~/.zshrc  //- shell 설정에 pyenv 관련 설정을 추가한다
+—————————————
+
+
+
+——————————————
+  847  pyenv
+
+  848  ~ pwd
+
+  849  cd .pyenv
+
+  850  cd ..
+
+  851  mv .pyenv .pyenv_backup 
+           //- 전에 브류가 아닌 깃헙으로 다운받은 pyenv를 삭제하는 대신에 pyenv_backup으로 이름을 바꿔주었다
+———————————————————
+
+
+  852  ls -a
+
+  853  cd .pyenv
+
+  854  vi ~/.zshrc
+
+
+—————————————————————
+  855  brew install readline xz //- yyuu깃헙에서 필요 패키지 찾아서 brew로 인스톨
+———————————————
+
+
+  856  pyenv
+
+  857  pyenv versions
+
+  858  pyenv install
+
+  859  pyenv install --list
+
+
+—————————————————————
+  860  pyenv install 3.4.3 //- pyenv를 이용해 기존에 가지고있는 파이썬과는 다른 3.4.3버전 설치
+
+  861  pyenv versions //- 확인
+————————————
+
+
+—————————————————
+  862  pyenv virtualenv 3.4.3 fc-python //- pyenv로 설치한 3.4.3버전의 파이썬을 사용할 수 있는 가상환경 fc-python생성 
+—————————————
+
+
+  863  pyenv version
+
+  864  pyenv versions
+
+  865  pyenv global 3.4.3
+
+  866  pyenv versions
+
+  867  pyenv global system
+
+  868  python --version
+
+  869  pyenv global 3.4.3
+
+  870  python --version
+
+  871  pyenv versions
+
+  872  pyenv --version
+
+  873  python --version
+
+  874  pyenv versions
+
+  875  cd .python
+
+  876  ls
+
+  877  cd desktop
+
+  878  ls
+
+  879  cd
+
+  880  cd desktop
+
+  881  cd fc_web_school
+
+  882  ls
+
+  883  cd week_01_htmlCss
+
+  884  ls
+
+  885  cd python
+
+  886  l
+
+  887  ls -a
+
+
+
+——————————————————
+  888  pyenv local fc-python //- 사용할 폴더로 들어가서 내가 만든 'pyenv3.4.3을 사용하는 fc-python 가상환경'을 사용하겠다고 지정
+—————————————————
+
+
+  889  ls -a
+
+  890  python
+
+  891  pyenv version
+
+  892  pyenv local fc-python
+
+  893  pyenv versions
+
+  894  ls
+
+  895  cd desktop
+
+  896  sl
+
+  897  ls
+
+  898  cd fc_web_school
+
+  899  ls
+
+  900  cd week_01_htmlCss
+
+  901  ls
+
+  902  python
+
+  903  cd python
+
+  904  python
+  905  pyenv virtualenv 3.4.3 fc-python
+  906  brew install pyenv-virtualenv
+  907  pyenv
+  908  pyenv virtualenv 3.4.3 fc-python
+  909  pyenv versions
+  910  pyenv install 3.4.3
+
+  911  l
+  912  vi .zshrc
+  913  .pyenv
+  914  l
+  915  versions
+  916  l
+  917  ..
+  918  l
+  919  pyenv versions
+  920  ..
+  921  l
+  922  ..
+  923  l
+  924  pyenv virtualenv 3.4.3 fc-python
+  925  l
+  926  cd week_01_htmlCss
+  927  l
+  928  cd projects
+  929  l
+  930  cd css
+  931  l
+  932  ..
+  933  l
+  934  ..
+  935  l
+  936  ..
+  937  l
+  938  cd python
+  939  l
+  940  pip ls
+  941  pip list
+  942  ..
+  943  l
+  944  ls
+  945  cd Desktop
+  946  ls
+  947  cd fc_web_school
+  948  cd
+  949  ls
+  950  cd Desktop
+  951  cd fc_web_school
+  952  ls
+
+
+
+————————————————————
+  953  cd python //- 가상 환경 fc-python을 사용하도록 설정되어있는 python 폴더로 들어감
+————————————————
+
+
+—————————————————————
+  954  pip list //- 깔려있는 pip list를 살펴봄
+
+  955  pip install --upgrade pip //- pip를 업그레이드시켜줌
+
+  956  pip install ipython //- ipython을 설치함 이건 fc-python 가상환경에만 깔아둔 거라서 fc-python밖의 pip는 사용불가
+
+  957  ipython //- 실행해본다
+—————————————————————————
+
+
+  
+
+———————————————
+  983  rm -rf .pyenv_backup //- 내가 설정한 것들이 잘 안먹어서 (선생님이)확인해보니, 경로가 꼬인 걸 깨닫고 
+                                잘못 지정된 pyenv(github으로 다운받은pyenv)를 잔해도 남기지않고 싸그리 없애버림
+—————————————————
+
+  984  l
+
+  985  mkdir function
+
+  986  cd function
+
+  987  vi scope.py
+
+  988  vi ~/.vimrc
+
+  989  ls
+
+————————————
+  990  ipython  //- ipython실행
+————————————
+
+  991  cd ..
+
+  992  mkdir scope
+
+  993  cd scope
+
+  994  pwd
+
+  995  vim nonlocal.py
+
+  996  python nonlocal.py
+  997  vim nonlocal.py
+  998  cd
+  999  ls
+ 1000  cd fc_web_school
+ 1001  ls
+ 1002  cd python
+ 1003  ls
+ 1004  cd s
+ 1005  cd scope
+ 1006  vim nonlocal.py
+ 1007  python nonlocal.py
+ 1008  vim nonlocal.py
+ 1009  python nonlocal.py
+ 1010  vim diff_global_arguments.py
+ 1011  python diff_global_arguments.py
+ 1012  vim lambda.py
+ 1013  cd ..
+ 1014  mkdir closure
+ 1015  ls
+ 1016  cd closure
+ 1017  vim module_b.py
+ 1018  vim module_a.py
+ 1019  ls
+ 1020  cd fc_web_school
+ 1021  ls
+ 1022  cd python
+ 1023  ls
+ 1024  cd closure
+ 1025  ls
+ 1026  cd module_a.py
+ 1027  vi module_a.py
+ 1028  vim module_b.py
+ 1029  python module_b.py
+ 1030  cd ..
+ 1031  ;s
+ 1032  ls
+ 1033  cd closure
+ 1034  python module_b.py
+ 1035  vim inner_closuer.py
+ 1036  ls
+ 1037  python inner_closuer.py
+ 1038  cd ..
+ 1039  ls
+ 1040  mkdir decorator
+ 1041  cd decorator
+ 1042  vim decorator.py
+ 1043  cd ..
+ 1044  ls
+ 1045  cd decorator
+ 1046  python decorator.py
+ 1047  cd ..
+ 1048  ls
+ 1049  vim 5p.py
+ 1050  ls
+ 1051  cd ..
+ 1052  ls
+ 1053  python 5p.py
+ 1054  vim 6p.py
+ 1055  python 6p.py
+ 1056  ls
+ 1057  python 6p.py
+ 1058  vim 6p.py
+ 1059  ls
+ 1060  mkdir algorithm
+ 1061  ls
+ 1062  cd algorithm
+ 1063  vimsequential_search.py
+ 1064  vim sequential_search.py
+ 1065  ls
+ 1066  cd algorithm
+ 1067  ls
+ 1068  python sequential_search.py
+ 1069  ls
+ 1070  vim selection_sort.py
+ 1071  ls
+ 1072  python selection_sort.py
+ 1073  pyenv version
+ 1074  cd craeling
+ 1075  ls
+ 1076  cd crawling
+ 1077  pyenv version
+ 1078  vi ~/.zshrc
+ 1079  pyenv
+ 1080  which python
+ 1081  echo $PATH
+ 1082  cd ..
+ 1083  ls
+ 1084  cd crawling
+ 1085  echo $PATH
+ 1086  vi ~/.zshrc
+ 1087  echo $PATH
+ 1088  vi ~/.zshrc
+ 1089  vi ~/.bash_profile
+ 1090  mv ~/.bash_profile .bash_profile_bak
+ 1091  l
+ 1092  pyenv
+ 1093  which python
+ 1094  cd ~/
+ 1095  l
+ 1096  vi .bashrc
+ 1097  rm .bashrc
+ 1098  l
+ 1099  pyenv --version
+ 1100  pyenv --versions
+ 1101  pyenv versions
+ 1102  which python
+ 1103  echo $SHELL
+ 1104  echo $PATH
+ 1105  cd ~/
+ 1106  l
+ 1107  vi .zshrc
+ 1108  python
+ 1109  vi ~/.zshrc
+ 1110  which python
+ 1111  echo $PATH
+ 1112  pyenv versions
+
+——————————————————————————
+ 1113  pyenv virtualenv 3.4.3 new_env //-뭔진 몰라도 가상환경을 새로 만들었다가
+ 1114  pyenv versions
+ 1115  pyenv uninstall new_env //- 지워버림
+——————————————————————
+
+
+ 1116  cd ~/
+ 1117  l
+ 1118  cd .pyenv
+ 1119  l
+ 1120  cd versions
+ 1121  l
+ 1122  cd 3.4.3
+ 1123  l
+ 1124  cd envs
+ 1125  l
+ 1126  ..
+ 1127  cd ~/
+ 1128  l
+ 1129  /usr/local/var
+ 1130  l
+ 1131  pwd
+ 1132  ls
+ 1133  cd Desktop
+ 1134  ls
+ 1135  cd first_git
+ 1136  ls
+ 1137  cd homework_SQL
+ 1138  ls
+ 1139  git add SQL_select_and\&or_orderBy_insert_update_del.md
+ 1140  cd ..
+ 1141  git status
+ 1142  git add python_study/01.pyenv_virtualenv_iPython_setting.md
+ 1143  git status
+ 1144  git commit
+ 1145  git pull
+ 1146  git push
+ 1147  cs
+ 1148  cd
+ 1149  ls
+ 1150  cd fc_web_school
+ 1151  ls
+ 1152  cd python
+ 1153  ls
+ 1154  vi test.py
+ 1155  cd
+ 1156  ls
+ 1157  cd fc_web_school
+ 1158  ls
+ 1159  cd python
+ 1160  python test.py
+ 1161  vi ~/.zshrc
+ 1162  source ~/.zshrc
+ 1163  vi ~/.zshrc
+ 1164  source ~/.zshrc
+ 1165  cd ..
+
+——————————————————————
+ 1166  cd python              
+ 1167  pip install beautifulsoup4  //- pip로 크롤링하는데 필요한 패키지들 설치
+ 1168  pip install requests
+—————————————————————
+
+ 1169  ㅣㄴ
+ 1170  ls
+ 1171  cd ~
+ 1172  ls
+ 1173  cd Desktop
+ 1174  ls
+ 1175  cd ..
+ 1176  ls
+ 1177  cd fc_web_school
+ 1178  ls
+ 1179  cd python
+ 1180  ls
+ 1181  cd crawling
+ 1182  ls
+ 1183  python crawl.py
+ 1184  pip list
+ 1185  pip install beautifulsoup4
+ 1186  pip install requests
+ 1187  python crawl.py
+ 1188  pip install lxml
+ 1189  python crawl.py
+ 1190  ls
+ 1191  mkdir pakage
+ 1192  cd pakage
+ 1193  vi shop.py
+ 1194  vi lol.py
+ 1195  vi game.py
+ 1196  pwd
+ 1197  ls
+ 1198  cd fc_web_school
+ 1199  ls
+ 1200  cd python
+ 1201  ls
+ 1202  cd pakage
+ 1203  ls
+ 1204  cd game.py
+ 1205  vi game.py
+ 1206  vi lol.py
+ 1207  pwd
+ 1208  ls
+ 1209  cd fc_web_school
+ 1210  ls
+ 1211  cd python
+ 1212  ls
+ 1213  cd pakage
+ 1214  ls
+ 1215  cd game.py
+ 1216  vi game.py
+ 1217  vi shop.py
+ 1218  ls
+ 1219  cd fc_web_school
+ 1220  ls
+ 1221  cd python
+ 1222  ls
+ 1223  cd pakage
+ 1224  ls
+ 1225  python game.py
+ 1226  python lol.py
+ 1227  python shop.py
+ 1228  python game.py
+ 1229  python lol.py
+ 1230  python crawl.py
+ 1231  ls
+ 1232  cd fc_web_school
+ 1233  ls
+ 1234  cd python
+ 1235  python crawl_daum.py
+ 1236  ls
+ 1237  cd ..
+ 1238  ls
+ 1239  cd homework_crawling
+ 1240  ls
+ 1241  python crawl_daum.py
+ 1242  python crawl.py
+ 1243  pyenv version
+ 1244  requests
+ 1245  python crawl.py
+ 1246  python crawl2.py
+ 1247  python crawl3.py
+ 1248  python crawl2.py
+ 1249  python crawl4.py
+ 1250  python crawl5.py
+ 1251  python crawl6.py
+ 1252  python crawl7.py
+ 1253  python crawl6.py
+ 1254  python crawl7.py
+ 1255  python crawl8.py
+ 1256  cd ..
+ 1257  ls
+ 1258  cd crawling
+ 1259  ls
+ 1260  python crawl.py
+ 1261  cd ..
+ 1262  ls
+ 1263  cd homework_crawling
+ 1264  ls
+ 1265  python crawl8.py
+ 1266  python crawl9.py
+ 1267  python crawl10.py
+
+——————————————————————————
+ 1268  pip
+ 1270  pip list
+ 1271  pyenv version
+ 1272  pyenv versions
+ 1273  pip freeze         //- 내가 사용하고있는 것들을 얼려서 버전이 어떤 걸 사용하고 있는지까지 알려준다.
+ 1274  pip freeze > requirements.txt  //- requirments.txt로 사용하는 버전들을 다 적어준다.
+
+
+원래 쓰던것과 다른 환경에서 작업할 때, 하나하나 뭘 사용했었는지 어떤 버전인지 찾아서 깔아야 하는 건 번거로운 일이다. 
+freeze를 사용해서 사용하고 있는 모듈에 대한 목록을 뽑아내어 requirments로 저장해주면 한번에 설치도 가능하다!!
+—————————————————————
+
+ 1275  l
+ 1276  cd ..
+
+—————————————————————
+ 1277  rm .python-version
+ 1278  pyenv version
+ 1279  pyenv versions
+ 1281  pyenv global 3.4.3
+ 1282  pyenv versions
+ 1283  pyenv uninstall fc-python  //- 이제까지 잘 쓰고있던 가상환경을 없애준다.(잘가 고마웠어)
+————————————————————
+
+
+ 1284  pip list
+ 1285  pyenv version
+ 1286  pyenv versions
+
+———————————————————
+ 1287  cd ~
+ 1288  ls
+ 1289  cd fc_web_school  //- 새로운 가상환경을 만들기 위해 pip 폴더를 하나 만들어준다
+ 1290  ls
+ 1291  mkdir pip_test
+ 1292  cd pip_test
+————————————————
+
+ 1293  l
+ 1294  pwd
+
+———————————————————
+ 1295  pyenv virtualenv 3.4.3 pip_test_env  //- 새로운 가상환경 pip_test_env을 만들어준다 (넌 이름을 보니 오래 못가겠다)
+———————————————————
+
+ 1296  pyenv version
+ 1297  pyenv versions
+
+———————————————————
+ 1298  pyenv local pip_test_env //- 가상환경을 사용하기 위해 만들어준 pip_test폴더에 방금 만든 pip_test_env를 사용하겠다고 지정해준다
+——————————————
+
+———————————————
+ 1299  git init
+ 1300  vi .gitignore //- 가상환경을 만들어둔 폴더에 깃을 생성한다
+———————————————
+
+ 1301  py .
+
+———————————————————
+ 1302  pyenv version
+ 1303  pip list
+ 1304  pip insatll --upgrade pip
+ 1305  pip install --upgrade pip   //- git 이 연동되어있는 pip_test폴더에 필요한 pip 모듈을 설치한다
+ 1306  pip install requests
+ 1307  pip install beautifulsoup
+ 1308  pip install BeautifulSoup
+ 1309  pip install BeautifulSoup4
+ 1310  ls
+————————————————————
+
+————————————————————
+ 1311  python pip_test.py
+ 1312  git status
+ 1313  git log
+ 1314  git status
+ 1315  git add .gitignore       //- pip_test파일을 다 작성하고 git에 올려준다. 
+ 1316  git status
+ 1317  git add .idea/
+ 1318  git status
+ 1319  git commit
+ 1320  git add pip_test.py
+ 1321  git status
+ 1322  git commit
+——————————————————
+
+
+——————————————————————
+ 1323  git remote add origin https://github.com/secretRami/pip_test.git  //- remot repository와 연결해준다
+ 1324  git push -u origin master
+————————————————————
+
+——————————————————————
+                        //- git에 올라간 pip_test폴더의 python파일을 누군가가 다운받아서 쓸 거라면 설정되어있는 모듈이 뭔지, 그 모듈은 어떤 버전을 사용하고 있는지 몰라서 헤매거나, 사용할 수 없을 것이다.(미래의 내가 될 수도 있다!) 그러니까 freeze시켜서 requirement.txt로 잘 저장해주고, 같이 git에 올려준다.
+
+ 1325  pip freeze > requirements.txt
+ 1326  l
+ 1327  git status
+ 1328  git add requirements.txt          
+ 1329  git commit
+ 1330  git push
+——————————————————
+
+
+———————————————————
+ 1331  cd ..
+ 1332  cd fc_web_school  //- 지치지도 않고 또 한번 샘플 파일을 만들어준다.(이러면 안되는데 다급해서 sp로 지었다)
+ 1333  mkdir sp
+ 1334  cd sp
+ 1335  pwd
+—————————————————————
+
+ 1336  pyenv versions
+
+——————————————————————
+ 1337  git clone https://github.com/secretRami/pip_test.git //- 이번엔 아까 github에 올린 것들을 가져오기위해 clone을 만들어줬다.
+————————————————
+
+
+——————————————————————
+ 1338  ls
+ 1339  cd pip_test
+ 1340  l
+ 1341  pip list
+ 1342  pyenv vurtualenv 3.4.3 clone_projecct  
+ 1343  pyenv virtualenv 3.4.3 clone_project
+ 1344  pyenv local clone_project
+
+//- 따라했는데 기억이 없다. sp폴더에서 사용할 가상환경인가..? 근데 왜 난 pip_test에서 이걸 지정해놨지..? 라고 생각했는데 sp폴더안에 pip_test가 또 있었다. 아아…. 대 충격!!!!! 그럼 이것은 정상이다. 
+—————————————————————
+
+———————————————————
+ 1345  ls
+ 1346  pip list
+ 1347  pip install -r requirements.txt
+ 1348  pip list
+
+//- 아까 잘못한게 맞나보다.. 아닌가..? 아리까리하다..  여튼 아까 설치한 모듈과 그 버전이 뭔지 저장해준 requirement.txt파일을 설치해준다. 한방에 끝난다. 기분좋다…. 가 되야하는데 오류가 나겠지 아마.. 하하하하
+————————————————
+
+———————————————————
+ 1349  vi README.md
+ 1350  git add README.md 
+ 1351  git commit
+ 1352  git status
+//- 그 외 세부적인 사항들이나, 추가해서 올려야 할 것이 있다면 README에 적어서 올려준다.
+   파이썬 버전을 어떤 걸 사용했는지, 모듈을 깔려면 명령어를 이걸 써라! 등등.
+————————————
+
+ 1353  cd ..
+ 1354  ls
+ 1355  cd ..
+ 1356  ls
+ 1357  cd python
+ 1358  mkdir class
+ 1359  vi shop.py
+ 1360  ls
+ 1361  cd fc_web_school
+ 1362  ls
+
+———————————————————————
+ 1364  cd python
+ 1365  pyenv virtualenv 3.4.3 rami_python 
+ 1366  pyenv local rami_python
+ 1367  pyenv versions
+//- 아까 잘 써먹던 fc-python을 보내고 나서 보니, 아아. 원래 있던 가상환경에 자리잡았던 어린양들이 방황한다. 
+    그래서 다시 fc-python같은 환경을 만들어줄 가상환경을 새로 만들어준다. 
+
+//- 근데 이건 그냥 쫌 궁금한건데 폴더에서 사용되고 있는 가상환경은 freeze로 깔려있는게 뭔지 알수있는데, 사용하고있지 않은 가상환경은 뭐가 어떻게 깔려있는지 어떻게 알 수 있음..?
+————————————————————
+
+
+————————————————————
+ 1368  pip list
+ 1369  pip install -r requirements.txt  
+ 1370  pip install --upgrade pip
+ 1371  pip install -r requirements.txt   //- 관련한 모듈들을 편하게 깔아주자, 정리하며 다시보니 freeze는 최고다!
+————————————————
+
+
+ 1372  ls
+ 1373  cd ..
+ 1374  cd python
+ 1375  ls
+ 1376  cd ..
+ 1377  cd pip_test
+ 1378  ls
+ 1379  cd ..            //- 무언가 오류가 난 듯 하다
+ 1380  ls
+ 1382  cd python
+ 1383  ls
+ 1384  pyenv versions
+ 1385  pyenv uninstall
+ 1386  ls
+
+————————————————
+ 1392  pyenv uninstall rami_python  //- 가상환경을 없앴다가 
+————————————————
+
+ 1393  pyenv version
+ 1394  pyenv versions
+ 1395  pip list
+
+—————————————————————————
+ 1396  pyenv virtualenv 3.4.3 rami_python  //- 다시 생성해준다
+ 1398  pyenv local rami_python             //- 그리고 폴더에 가상환경을 쓰겠다오! 하고 외쳐줌.
+——————————————
+
+ 1399  pyenv version
+ 1400  pyenv versiona
+ 1401  pyenv versions
+ 1402  pip list
+
+—————————————————————————
+ 1403  vi requirements.txt   //- 우현님의 도움을 받아 requirements.txt를 작성했다 이 자리를 빌어 항상 고맙습니다 ㅎ
+——————————————————————————
+
+——————————————————————————
+ 1404  pip install -r requirements.txt //- 아아.. copy도 잘 못해서 이렇게 오류를 내는가..ㅠㅠㅠ 다시 복붙을 해야만 했다
+ 1405  vi requirements.txt
+————————————————————————
+
+
+———————————————————————————
+ 1406  pip install -r requirements.txt //- 드디어 나도 남들이 겪는 오류를 겪을 수 있었다.
+————————————————————————
+
+———————————————————————
+ 1407  pip install -U setuptools  //- 왜 오류인지는 몰라도 해결 방법은 알고있지!
+ 1408  pip install -r requirements.txt  //- 성공적으로 설치완료되었다.
+———————————————————
+ 1409* ls                  
+
+
+ 1410  ipython
+ 1411* cd class
+ 1412* ls
+
+
+
+
+ 1413* vi class_sample.py
+ 1414  ls
+ 1415  cd class
+ 1416  ipython
+ 1417  python class_sample.py
+ 1418* vi class_sample2.py
+ 1419  python class_sample2.py
